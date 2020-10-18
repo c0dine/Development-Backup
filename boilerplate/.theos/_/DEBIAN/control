@@ -1,0 +1,10 @@
+Package: com.c0dine
+Name: boilerPlate
+Architecture: iphoneos-arm
+Description: A tweak by c0dine ;)
+Maintainer: c0dine <c0dineDev@gmail.com>
+Author: c0dine <c0dineDev@gmail.com>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
+Version: 0.0.1-17+debug
+Installed-Size: 168

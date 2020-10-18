@@ -1,0 +1,18 @@
+const Command = require('../base/Command.js');
+
+class  extends Command {
+  constructor (client) {
+    super(client, {
+      name: "",
+      description: "",
+      category:"",
+      usage: "",
+      aliases: [],
+      permLevel: ""
+    });
+  }
+
+  async run (message, args, level) {
+  }
+}
+module.exports = ;

@@ -1,0 +1,9 @@
+Package: com.c0dine
+Name: RamSpoof
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Spoof your ram
+Maintainer: c0dine <c0dineDev@gmail.com>
+Author: c0dine <c0dineDev@gmail.com>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)

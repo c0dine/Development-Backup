@@ -1,0 +1,48 @@
+{
+  "name": "Dusty",
+  "version": "1.1.7",
+  "description": "An amazing bot!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "prepublish": "node util/setup.js"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c0dine/Dust.git"
+  },
+  "author": "Corban Amouzou",
+  "license": "MIT",
+  "homepage": "https://github.com/c0dine/Dust#readme",
+  "dependencies": {
+    "better-sqlite3": "^6.0.1",
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.3",
+    "config.js": "^0.1.0",
+    "config.json": "0.0.4",
+    "discord.js": "^12.1.1",
+    "enmap": "^5.0.1",
+    "google": "^2.1.0",
+    "got": "^11.0.1",
+    "klaw": "^2.1.1",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "node-fetch": "^2.6.0",
+    "pm2": "^4.2.3",
+    "readline-sync": "^1.4.9",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.18.1",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
