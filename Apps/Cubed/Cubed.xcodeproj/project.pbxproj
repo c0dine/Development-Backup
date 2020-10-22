@@ -20,6 +20,13 @@
 		1149B0FE253BCBD800E06ED7 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1149B0FC253BCBD800E06ED7 /* Extentions.swift */; };
 		1149B101253BF61C00E06ED7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1149B100253BF61C00E06ED7 /* Environment.swift */; };
 		1149B102253BF62400E06ED7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1149B100253BF61C00E06ED7 /* Environment.swift */; };
+		115FE35E253E3F1300D78839 /* RendererPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115FE35D253E3F1300D78839 /* RendererPath.swift */; };
+		115FE35F253E3F1300D78839 /* RendererPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115FE35D253E3F1300D78839 /* RendererPath.swift */; };
+		1187492B253CEA1100DA6A94 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187492A253CEA1100DA6A94 /* Renderer.swift */; };
+		1187492C253CEA1100DA6A94 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187492A253CEA1100DA6A94 /* Renderer.swift */; };
+		1187492D253CEE8600DA6A94 /* VerticiesAndMatrixes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0B59C253A69B80018A8C1 /* VerticiesAndMatrixes.swift */; };
+		11874933253D2E6A00DA6A94 /* RenderPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11874932253D2E6A00DA6A94 /* RenderPageView.swift */; };
+		11874934253D2E6A00DA6A94 /* RenderPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11874932253D2E6A00DA6A94 /* RenderPageView.swift */; };
 		11A0B579253A68430018A8C1 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0B578253A68430018A8C1 /* Tests_iOS.swift */; };
 		11A0B584253A68430018A8C1 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0B583253A68430018A8C1 /* Tests_macOS.swift */; };
 		11A0B586253A68430018A8C1 /* CubedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0B55D253A68160018A8C1 /* CubedApp.swift */; };
@@ -28,7 +35,7 @@
 		11A0B589253A68430018A8C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0B55E253A68160018A8C1 /* ContentView.swift */; };
 		11A0B58A253A68430018A8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A0B55F253A68420018A8C1 /* Assets.xcassets */; };
 		11A0B58B253A68430018A8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A0B55F253A68420018A8C1 /* Assets.xcassets */; };
-		11A0B59D253A69B80018A8C1 /* ShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0B59C253A69B80018A8C1 /* ShapeRenderer.swift */; };
+		11A0B59D253A69B80018A8C1 /* VerticiesAndMatrixes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0B59C253A69B80018A8C1 /* VerticiesAndMatrixes.swift */; };
 		11A0B5A0253A7A6B0018A8C1 /* MatrixMagix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0B59F253A7A6B0018A8C1 /* MatrixMagix.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +63,9 @@
 		1149B0F8253BB1AB00E06ED7 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		1149B0FC253BCBD800E06ED7 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		1149B100253BF61C00E06ED7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		115FE35D253E3F1300D78839 /* RendererPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererPath.swift; sourceTree = "<group>"; };
+		1187492A253CEA1100DA6A94 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Renderer.swift; path = "../New Group/Renderer.swift"; sourceTree = "<group>"; };
+		11874932253D2E6A00DA6A94 /* RenderPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RenderPageView.swift; path = "../New Group/RenderPageView.swift"; sourceTree = "<group>"; };
 		11A0B55D253A68160018A8C1 /* CubedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubedApp.swift; sourceTree = "<group>"; };
 		11A0B55E253A68160018A8C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11A0B55F253A68420018A8C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,7 +80,7 @@
 		11A0B57F253A68430018A8C1 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A0B583253A68430018A8C1 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		11A0B585253A68430018A8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11A0B59C253A69B80018A8C1 /* ShapeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeRenderer.swift; sourceTree = "<group>"; };
+		11A0B59C253A69B80018A8C1 /* VerticiesAndMatrixes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticiesAndMatrixes.swift; sourceTree = "<group>"; };
 		11A0B59F253A7A6B0018A8C1 /* MatrixMagix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMagix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +119,7 @@
 		1149B0EE253B714600E06ED7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				115FE35C253E3EDE00D78839 /* Renderer */,
 				1149B0EF253B716400E06ED7 /* MathTestView.swift */,
 				1149B0F2253B736100E06ED7 /* NavigationItem.swift */,
 				1149B0F5253B92E100E06ED7 /* NavigationWidget.swift */,
@@ -131,6 +142,16 @@
 				1149B100253BF61C00E06ED7 /* Environment.swift */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		115FE35C253E3EDE00D78839 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				11874932253D2E6A00DA6A94 /* RenderPageView.swift */,
+				1187492A253CEA1100DA6A94 /* Renderer.swift */,
+				115FE35D253E3F1300D78839 /* RendererPath.swift */,
+			);
+			path = Renderer;
 			sourceTree = "<group>";
 		};
 		11A0B557253A68130018A8C1 = {
@@ -217,7 +238,7 @@
 		11A0B59B253A699B0018A8C1 /* Drawer */ = {
 			isa = PBXGroup;
 			children = (
-				11A0B59C253A69B80018A8C1 /* ShapeRenderer.swift */,
+				11A0B59C253A69B80018A8C1 /* VerticiesAndMatrixes.swift */,
 			);
 			path = Drawer;
 			sourceTree = "<group>";
@@ -387,16 +408,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115FE35E253E3F1300D78839 /* RendererPath.swift in Sources */,
 				1149B0F3253B736100E06ED7 /* NavigationItem.swift in Sources */,
 				11A0B5A0253A7A6B0018A8C1 /* MatrixMagix.swift in Sources */,
 				1149B0F0253B716400E06ED7 /* MathTestView.swift in Sources */,
 				11A0B588253A68430018A8C1 /* ContentView.swift in Sources */,
+				1187492B253CEA1100DA6A94 /* Renderer.swift in Sources */,
 				1149B0F9253BB1AB00E06ED7 /* RingView.swift in Sources */,
 				1149B0F6253B92E100E06ED7 /* NavigationWidget.swift in Sources */,
-				11A0B59D253A69B80018A8C1 /* ShapeRenderer.swift in Sources */,
+				11A0B59D253A69B80018A8C1 /* VerticiesAndMatrixes.swift in Sources */,
 				11A0B586253A68430018A8C1 /* CubedApp.swift in Sources */,
 				1149B0FD253BCBD800E06ED7 /* Extentions.swift in Sources */,
 				1149B101253BF61C00E06ED7 /* Environment.swift in Sources */,
+				11874933253D2E6A00DA6A94 /* RenderPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,15 +428,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115FE35F253E3F1300D78839 /* RendererPath.swift in Sources */,
 				11A0B589253A68430018A8C1 /* ContentView.swift in Sources */,
 				1149B0F4253B744300E06ED7 /* NavigationItem.swift in Sources */,
 				11A0B587253A68430018A8C1 /* CubedApp.swift in Sources */,
 				1149B0F1253B717D00E06ED7 /* MathTestView.swift in Sources */,
+				1187492D253CEE8600DA6A94 /* VerticiesAndMatrixes.swift in Sources */,
 				1149B102253BF62400E06ED7 /* Environment.swift in Sources */,
 				1149B0FE253BCBD800E06ED7 /* Extentions.swift in Sources */,
 				1149B0FA253BB1AB00E06ED7 /* RingView.swift in Sources */,
 				1149B0ED253B618700E06ED7 /* MatrixMagix.swift in Sources */,
+				1187492C253CEA1100DA6A94 /* Renderer.swift in Sources */,
 				1149B0F7253B92E100E06ED7 /* NavigationWidget.swift in Sources */,
+				11874934253D2E6A00DA6A94 /* RenderPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

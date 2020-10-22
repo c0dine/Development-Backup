@@ -46,6 +46,7 @@ public struct NavigationWidget: View {
                 ).offset(y: 10)
             }.offset(y: -10))
         }.padding(.top)
+        .padding(.leading, 5)
         .animation(.easeOut)
         .scaleEffect(isDragging ? 0.98 : 1)
         .rotation3DEffect(

@@ -12,18 +12,12 @@ struct ContentView: View {
     let amount = 4
     var body: some View {
         List() {
-            /*
-            LazyVGrid(columns: [
-                GridItem(.adaptive(minimum: 100))
-            ], spacing: 40) {
-                ForEach (0...1, id: \.self) { index in
-                    RoundedRectangle(cornerRadius: 20).frame(width: 100, height: 60)
-                }
-            }
-             */
             NavigationWidget()
             NavigationLink(destination: MathTestView().frame(minWidth: 400, minHeight: 400, alignment: .center)) {
                 NavigationItem(title: "Meth Test", imageName: "function")
+            }
+            NavigationLink(destination: RenderPageView()) {
+                NavigationItem(title: "Canvas View", imageName: "textbox")
             }
         }.listStyle(SidebarListStyle())
         .frame(width: 250)

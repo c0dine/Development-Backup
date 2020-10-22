@@ -25,16 +25,16 @@ enum MatrixError: Error {
 
 
 protocol matrixOperator {
-    var projection: Array<Array<Int>> { get set }
-    func cast(points: Array<Array<Int>>) throws -> Array<Array<Int>>
+    var projection: Array<Array<CGFloat>> { get set }
+    func cast(points: Array<Array<CGFloat>>) throws -> Array<Array<CGFloat>>
 }
 
 struct MatrixProjector: matrixOperator {
-    var projection: Array<Array<Int>>
-    func cast(points: Array<Array<Int>>) throws -> Array<Array<Int>> {
-        print("-----------------Starting-Cast------------------")
-        logMatrix(m: projection)
-        logMatrix(m: points)
+    var projection: Array<Array<CGFloat>>
+    func cast(points: Array<Array<CGFloat>>) throws -> Array<Array<CGFloat>> {
+        //print("-----------------Starting-Cast------------------")
+        //logMatrix(m: projection)
+        //logMatrix(m: points)
         // Variables
         let collumns = points[0].count
         let rows = points.count
@@ -44,36 +44,21 @@ struct MatrixProjector: matrixOperator {
         guard rows == projectionCollums else {
             throw MatrixError.CollumnsAndRowsUnequal(collumns: collumns, rows: projectionRows)
         }
-        var result = Array<Array<Int>>()
-        print("-----------------Starting-Math------------------")
+        var result = Array<Array<CGFloat>>()
+        //print("-----------------Starting-Math------------------")
         for i in 0...(projectionRows-1) {
-            print("projectionRows: \(projectionRows). At index: \(i)")
             for j in 0...(collumns-1) {
-                print("collumns: \(collumns). At index: \(j)")
-                var sum: Int = 0
+                var sum: CGFloat = 0
                 for k in 0...(rows-1) {
-                    
                     sum += projection[i][k] * points[k][j]
-                    /*
-                    if i > projection.count {
-                        print("k: \(k) is out the index range")
-                        throw MatrixError.IndexOutOfRange(index: k, range: projection[i].count)
-                    } else if k > projection[i].count {
-                        print("i: \(i) is out the index range")
-                    }
-                    sum += projection[i][k] * points[k][j]
-                     */
                 }
                 result.append([sum])
             }
         }
-        print("------------------Ending-Math------------------")
-        logMatrix(m: result)
-        print("------------------Ending-Cast------------------")
         return result
     }
 }
-func logMatrix(m: Array<Array<Int>>) {
+func logMatrix(m: Array<Array<CGFloat>>) {
     let collumns = m[0].count
     let rows = m.count
     print("\(collumns)x\(rows)")
@@ -92,7 +77,13 @@ func logMatrix(m: Array<Array<Int>>) {
     }
 }
 
-
+/*
+func convertTo2D<T: Verticies>(verticies: T) -> T {
+    if verticies.x {
+        
+    }
+}
+*/
 /*
  4D projection to 3D
  

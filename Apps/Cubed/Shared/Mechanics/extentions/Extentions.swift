@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-// Logic Magix
+// Logic Magix (Haven't even used this yet)
 extension View {
     @ViewBuilder
     public func `if`<V>(_ condition: Bool, input: (Self) -> V) -> some View where V: View {
